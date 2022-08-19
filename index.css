@@ -5,7 +5,27 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: black;
+    max-width: 1280px;
+    width: 100%;
 }
+
+html{
+    width: 100%;
+    font-size:62.5%
+}
+
+html body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 100vh;
+    height: 100vh;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;}
 
 .header{
     color: white;
@@ -13,15 +33,17 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     /* width: auto; */
-    padding: 15px;
+    padding: 50px;
     background-color: #157293;
     /* text-align: center; */
-    height: 40px;
+    height: 100vh;
 }
 h1{
     width: 45%;
     margin-top: 5px;
+    height: 45%;
 }
+
 .section2{
     width: 80%;
     display: flex;
@@ -61,6 +83,7 @@ h2{
     color:#ffffff;
     font-weight: 600;
     font-size: 20px;
+    border-color: #4D9AAD;
 }
 .section32{
     margin-left: 90px;
@@ -153,16 +176,21 @@ h2{
     padding: 10px;
 }
 
-@media screen and (min-width: 414px){
-    .images{display: none;}
-}
-     
-
-
-@media screen and (max-width: 768px) {
-    body{
+@media screen and (max-width:375px) {
+    .body{
+        max-width: 375px;
+        width:100%;
+    }
+    .section2{
+        width:100%;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin-left: 20px;
+    }
+  
+        
+    
 }
